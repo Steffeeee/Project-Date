@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<title>Age Calculator</title>
+
+
+<link rel="stylesheet" href="agecalc.css">
+<script src="agecalc.js"></script>
+
+<div id="main-wrap" class="wrap">
+  <section>
+    <h1>Age Calculator</h1>
+  </section>
+  <section>
+    <form action="/">
+      <div class="input-wrap">
+        <label for="birthdate">
+          <h2>Your Birthday</h2>
+          <p>Enter your birth date. <a class="mdl-launch hidden" href="#" id="mdlO">View examples</a></p>
+        </label>
+        <input id="birthdate" name="birthdate" placeholder="E.g. 1990/05/15, May 15, 1990" />
+      </div>
+      <noscript>
+        <input class="submit" type="submit" value="Calculate" />
+      </noscript>
+    </form>
+  </section>
+  <section>
+    <div class="result-header">
+      <h1 id="result1">Waiting for input...</h1>
+      <p id="sub"></p>
+    </div>
+    <div class="result-formats hidden" id="otherSection">
+      <h2>Other time formats</h2>
+      <ul id="otherList" class="subdued"></ul>
+    </div>
+  </section>
+</div>
+<div class="mdl">
+  <button class="close" id="mdlX">×</button>
+  <div class="wrap">
+    <div class="content">
+      <div class="header">
+        <h1>Date Format Examples</h1>
+      </div>
+      <div class="body">
+        <ul>
+          <li>1990/05/15</li>
+          <li>05/15/1990</li>
+          <li>May 15, 1990</li>
+          <li>15 May 1990</li>
+          <li>May 15 1990</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg"></div>
+  </div>
+</div>
